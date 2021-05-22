@@ -16,16 +16,19 @@ h2 {
     font-weight: normal;
     user-select: none;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 #alertMessage {
     font-size: 100px;
     color: white;
     user-select: none;
+    text-align: center;
 }
 
 .btn-warning {
     width: 500px !important;
+    padding: 0 !important;
     height: 100px;
     font-size: 50px;
 }
@@ -50,4 +53,19 @@ tbody tr {
     color: white !important;
     font-size: 18px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    #alertMessage {
+        font-size: 40px;
+    }
+    #btnTryAgain {
+        width: 250px !important;
+        height: 80px;
+        font-size: 50px;
+    }
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
